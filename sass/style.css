@@ -1,0 +1,25 @@
+body {
+  background-color: red;
+}
+
+.text, textarea, h1 {
+  color: background();
+  font-size: 20px;
+}
+
+h2 {
+  color: white;
+}
+
+.btn {
+  border: 3px solid yellow;
+  border-color: yellow;
+  border-style: solid;
+  border-radius: 3px;
+}
+
+.text, textarea, h1 {
+  content: "React";
+}
+
+/*# sourceMappingURL=style.css.map */

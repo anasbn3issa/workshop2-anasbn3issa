@@ -1,0 +1,5 @@
+@mixin inline-block($border-radius: 3px) {
+  border-color: yellow;
+  border-style: solid;
+  border-radius: $border-radius;
+}

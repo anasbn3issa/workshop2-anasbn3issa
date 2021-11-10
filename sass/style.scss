@@ -1,0 +1,46 @@
+@import "mixin.scss";
+$red: red;
+$blue: blue;
+$white: white;
+$black: black;
+body
+{
+    background-color: red;
+}
+.text {
+    color: background();
+    font-size: 20px;
+}
+textarea , h1 {
+    @extend .text;
+}
+
+@function background($color) {
+    @if ($color != white) {
+        @return $black;
+    } @else {
+        @return $white;
+    }
+}
+h2 {
+    color : background(white);
+}
+.btn {
+    border: 3px solid yellow;
+    @include inline-block()
+}
+
+$langages : "React", "Spring", "HTML", "SOA";
+
+@function first($list){
+    @return nth($list,1);
+}
+
+@function lastElement($list) {
+    @return nth($list, -1);
+}
+
+
+.text {
+    content: first($langages);
+}
